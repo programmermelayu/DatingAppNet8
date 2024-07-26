@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { AfterViewChecked, Component, inject } from '@angular/core';
 import { RegisterComponent } from '../register/register.component';
 import { HttpClient } from '@angular/common/http';
 

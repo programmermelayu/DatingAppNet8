@@ -11,7 +11,7 @@ import { ServerErrorComponent } from './errors/server-error/server-error.compone
 
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, canActivate: [authGuard] },
   {
     path: '',
     runGuardsAndResolvers: 'always',
