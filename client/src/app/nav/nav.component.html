@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-default">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
   <div class="container">
     <a class="navbar-brand" routerLink="/" routerLinkActive="active"
       >Dating App</a
@@ -35,7 +35,7 @@
         >Welcome {{accountService.currentUser()?.username | titlecase }}</a
       >
       <div *dropdownMenu class="dropdown-menu">
-        <a class="dropdown-item">Edit Profile</a>
+        <a routerLink="/member/edit" class="dropdown-item">Edit Profile</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" (click)="logout()">Logout</a>
       </div>
@@ -60,7 +60,7 @@
         placeholder="Password"
         type="password"
       />
-      <button class="btn btn-outline-success" type="submit">Login</button>
+      <button class="btn btn-success" type="submit">Login</button>
     </form>
     }
   </div>
